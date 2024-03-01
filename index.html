@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Chatbot Plugin</title>
+</head>
+<body>
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined"><ion-icon name="chatbox" id="unique"></ion-icon></span>
+        <span class="material-symbols-outlined"><ion-icon name="close-outline" id='unique'></ion-icon></i></span>
+        <div class="chat-notification">Chat With Us?</div>
+    </button>
+    
+    <div class="chatbot">
+        
+        <header>
+            <div class="logo-image" loading="lazy">
+                <img src="https://images.2moons.ai/prompt/slices/3/watermarked/jira-chatbot-logo-ticket_cI4XD.png" alt="logo" width="40" height="40">
+            </div>
+            <div class="company-name">
+                <h2>PyGenius<abbr title="Verified"><i class='bx bxs-badge-check' style='color:#00a2f0'></i></abbr></h2>
+                <p>Our team can help if needed</p>
+                <span class="close-btn"><ion-icon name="close-outline" style='font-size: 1.2rem;'></ion-icon></i></span>
+            </div>
+            <abbr title="Wide Screen"><ion-icon name="chevron-back-outline" class="fullscreen-button"></ion-icon></abbr>
+        </header>
+
+        <ul class="chatbox">
+            <div class="not-alert">
+                <p>Too many requests in 15 minutes.</p>
+            </div>
+
+            <li class="chat incoming">
+                <span class="material-symbols-outlined"><i class='bx bxs-message-square-dots'></i></span>
+                <p>Hi there 👋<br>How can i help you today?</p>
+            </li>
+            
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined"><i class='bx bxs-send'></i></span>
+            <p>Powered by <b><a href="https://github.com/ChAbdulWahhab" target="_blank">Ch Abdul Wahab</a></b></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
